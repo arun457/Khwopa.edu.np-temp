@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from khwopa.edu.np/mis.php/site/login by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Jul 2021 03:54:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="shortcut icon" href="../../themes/admin_kce/img/fav.png" />
+<link rel="stylesheet" href="../../css/login_style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="../../assets/a81b85ab/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/a81b85ab/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/a81b85ab/css/jquery-ui-bootstrap.css" />
+<script type="text/javascript" src="../../assets/86a7a829/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets/a81b85ab/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../assets/a81b85ab/js/bootstrap-noconflict.js"></script>
+<script type="text/javascript" src="../../assets/a81b85ab/bootbox/bootbox.min.js"></script>
+<script type="text/javascript" src="../../assets/a81b85ab/notify/notify.min.js"></script>
+<script type="text/javascript" src="../../assets/86a7a829/jquery.yiiactiveform.js"></script>
+<title>Welcome to Khwopa EMIS</title>
+</head>
+<body>
+<div class="container" id="page">
+<section class="container">
+<div class="login">
+<h1>Login to EMIS</h1>
+<form id="login-form" action="https://khwopa.edu.np/mis.php/site/login" method="post">
+<p>
+<input placeholder="Username or Email or CRN" required="required" name="LoginForm[username]" id="LoginForm_username" type="text" /> <div class="errorMessage" id="LoginForm_username_em_" style="display:none"></div>
+</p>
+<p>
+<input placeholder="Password" required="required" name="LoginForm[password]" id="LoginForm_password" type="password" /> <div class="errorMessage" id="LoginForm_password_em_" style="display:none"></div> </p>
+<p>
+</p>
+<p class="remember_me">
+<label>
+<input id="ytLoginForm_rememberMe" type="hidden" value="0" name="LoginForm[rememberMe]" /><input name="LoginForm[rememberMe]" id="LoginForm_rememberMe" value="1" type="checkbox" /> Remember me on this computer
+</label>
+</p>
+<p class="submit">
+<input type="submit" name="yt0" value="Login" /> </p>
+</form> </div>
+<div class="login-help">
+<p>Forgot your password? <a href="forgetpass.html">Click here to reset it</a>.</p>
+<p><b>For Student Login:</b> Use <em>CRN</em> as Username and <em>DoB in BS (e.g. 2052-10-02) or in AD (e.g. 2001-01-10)</em> as Password.</p>
+</div>
+</section>
+<div class="clear"></div>
+</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('[data-toggle=popover]').popover();
+jQuery('body').tooltip({"selector":"[data-toggle=tooltip]"});
+jQuery('#login-form').yiiactiveform({'validateOnSubmit':true,'attributes':[{'id':'LoginForm_username','inputID':'LoginForm_username','errorID':'LoginForm_username_em_','model':'LoginForm','name':'username','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Username cannot be blank.");
+}
+
+}},{'id':'LoginForm_password','inputID':'LoginForm_password','errorID':'LoginForm_password_em_','model':'LoginForm','name':'password','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("Password cannot be blank.");
+}
+
+}}],'errorCss':'error'});
+});
+/*]]>*/
+</script>
+</body>
+
+<!-- Mirrored from khwopa.edu.np/mis.php/site/login by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Jul 2021 03:54:49 GMT -->
+</html>

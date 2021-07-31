@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<meta content="utf-8" http-equiv="encoding" />
+
+<link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+<!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" />
+        <![endif]-->
+<link rel="stylesheet" type="text/css" href="/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/css/form.css" />
+<link rel="stylesheet" href="/css/login_style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/a81b85ab/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/assets/a81b85ab/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/assets/a81b85ab/css/jquery-ui-bootstrap.css" />
+<script type="text/javascript" src="/assets/86a7a829/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/a81b85ab/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/a81b85ab/js/bootstrap-noconflict.js"></script>
+<script type="text/javascript" src="/assets/a81b85ab/bootbox/bootbox.min.js"></script>
+<script type="text/javascript" src="/assets/a81b85ab/notify/notify.min.js"></script>
+<title>Khwopa MIS - Error</title>
+<meta name="keywords" content="Khwopa College of Engineering, KCE, KHCE, Community Based College, Engineering College of Nepal" />
+<meta name="description" content="Khwopa College of Engineering (KCE)is situated in the city of Bhaktapur, Nepal. It was established as a community college to provide engineering education by the local government.It is one of the colleges that fall among the Khwopa Circle of educational institutions." />
+<meta name="author" content="Er. Shiva K. Shrestha">
+<link rel="shortcut icon" href="/themes/admin_kce/img/fav.png">
+<script>
+@media (max-width: 979px) /* @grid-float-breakpoint -1 */
+{
+    .navbar-fixed-top
+    {
+    margin-top: -60px !important;
+    }
+    #page{
+        margin-top: 60px !important;
+    }
+}    
+</script>
+<style>
+#myBtnn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+  transition: .3s ease;
+}
+
+#myBtnn:hover  {
+transform: scale(1.2)
+}
+#myBtnn svg{
+transition: .3s ease transform;
+}
+</style>
+</head>
+<body>
+<body>
+<button onclick="topFunction()" id="myBtnn" title="Go to Top"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,153.94c-37.52223,0 -67.94,-30.41777 -67.94,-67.94v0c0,-37.52223 30.41777,-67.94 67.94,-67.94v0c37.52223,0 67.94,30.41777 67.94,67.94v0c0,37.52223 -30.41777,67.94 -67.94,67.94z" fill="#ffffff"></path><g fill="#e74c3c"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,37.9948 30.8052,68.8 68.8,68.8c37.9948,0 68.8,-30.8052 68.8,-68.8c0,-37.9948 -30.8052,-68.8 -68.8,-68.8zM80.26667,126.13333v-55.3324l-24.51573,24.51573l-9.72947,-9.72947l39.97853,-39.98427l39.98427,39.98427l-9.72947,9.72947l-24.52147,-24.51573v55.3324z"></path></g></g></svg></button>
+<div id="myModal" class="modal hide fade">
+<div class="modal-header">
+<a class="close" data-dismiss="modal">&times;</a>
+<h4>Success</h4>
+</div>
+<div class="modal-body">
+<p>Hurray!! Our MIS is 24*7 accessible over the internet too.</p>
+</div>
+<div class="modal-footer">
+<a data-dismiss="modal" class="btn" id="yw0" href="site/monitor">Save changes</a> <a data-dismiss="modal" class="btn" id="yw1" href="#">Close</a> </div>
+</div>
+<div class="container" id="page">
+<ul class="breadcrumb"><li><a href="/mis.php">Home</a><span class="divider">&raquo;</span></li><li class="active">Error</li></ul>
+<div>
+<div style="margin: -25px 0px 0px 0px; padding: 20px 20px 0px 20px;" class="flashmsg" id="yw2"></div> </div>
+<h2>Error 404</h2>
+<div class="error">
+The system is unable to find the requested action &quot;site&quot;.</div>
+<div class="clear"></div>
+</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('[data-toggle=popover]').popover();
+jQuery('body').tooltip({"selector":"[data-toggle=tooltip]"});
+jQuery('#myModal').modal({'show':false});
+$(".flashmsg").animate({opacity: 1.0}, 3000).fadeOut("slow");
+jQuery('#yw2_0 .alert').alert();
+});
+/*]]>*/
+</script>
+</body>
+</html>
